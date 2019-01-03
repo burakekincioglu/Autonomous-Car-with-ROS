@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="deep_learning" pkg="deep_learning" type="deep_learning">
+  <param name="type" type="int" value="1" />
+  <param name="steering" type="double" value="1.0" />
+  <param name="hasObstacle" type="bool" value="False" />
+</node>
+\endverbatim
+

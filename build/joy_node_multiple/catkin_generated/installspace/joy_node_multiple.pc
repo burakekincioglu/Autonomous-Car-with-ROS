@@ -1,0 +1,8 @@
+prefix=/home/nvidia/racecar-ws/install
+
+Name: joy_node_multiple
+Description: Description of joy_node_multiple
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/nvidia/racecar-ws/install/lib 
+Requires: 

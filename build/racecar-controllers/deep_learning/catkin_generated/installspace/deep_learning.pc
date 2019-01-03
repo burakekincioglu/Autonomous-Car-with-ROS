@@ -1,0 +1,8 @@
+prefix=/home/nvidia/racecar-ws/install
+
+Name: deep_learning
+Description: Description of deep_learning
+Version: 0.0.0
+Cflags: -I/home/nvidia/racecar-ws/install/include
+Libs: -L/home/nvidia/racecar-ws/install/lib 
+Requires: message_runtime

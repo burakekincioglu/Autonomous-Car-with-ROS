@@ -1,0 +1,6 @@
+<launch>
+    <!-- joy node -->
+    <node respawn="false" pkg="joy_node_multiple" type="joy_node.py" name="joy_node_multiple" output="screen">
+    </node>
+
+</launch>

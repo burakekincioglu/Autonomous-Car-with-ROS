@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~type" : \b [int] Source type min: -2147483648, default: 1, max: 2147483647
+- \b "~steering" : \b [double] Steering angle min: -0.34, default: 1.0, max: 0.34
+- \b "~hasObstacle" : \b [bool] Lidar flag for obstacle min: False, default: False, max: True
+

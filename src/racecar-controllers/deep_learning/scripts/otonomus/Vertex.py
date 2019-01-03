@@ -1,0 +1,46 @@
+import sys
+
+
+class Vertex:
+    def __init__(self, node, x_coor, y_coor,is_implicit=0):
+        self.id = node
+        self.x = x_coor
+        self.y = y_coor
+        self.is_implicit = is_implicit
+        self.adjacent = {}
+        self.reset()
+
+    def reset(self):
+        # Set distance to infinity for all nodes
+        self.distance = sys.maxint
+        # Mark all nodes unvisited
+        self.visited = False
+        # Predecessor
+        self.previous = None
+
+    def add_neighbor(self, neighbor, weight=0):
+        self.adjacent[neighbor] = weight
+
+    def get_connections(self):
+        return self.adjacent.keys()
+
+    def get_id(self):
+        return self.id
+
+    def get_weight(self, neighbor):
+        return self.adjacent[neighbor]
+
+    def set_distance(self, dist):
+        self.distance = dist
+
+    def get_distance(self):
+        return self.distance
+
+    def set_previous(self, prev):
+        self.previous = prev
+
+    def set_visited(self):
+        self.visited = True
+
+    def __str__(self):
+        return str(self.id) + ' adjacent: ' + str([x.id for x in self.adjacent])
